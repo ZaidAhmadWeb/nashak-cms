@@ -1,0 +1,25 @@
+export default {
+  "collectionName": "components_difference_cycle_steps",
+  "info": {
+    "displayName": "Cycle Step",
+    "icon": "refresh"
+  },
+  "options": {},
+  "attributes": {
+    "stepNumber": {
+      "type": "integer",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "duration": {
+      "type": "string",
+      "required": true
+    },
+    "note": {
+      "type": "text"
+    }
+  }
+};

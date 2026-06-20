@@ -1,0 +1,26 @@
+export default {
+  "collectionName": "components_shared_icon_text_cards",
+  "info": {
+    "displayName": "Icon Text Card",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+};

@@ -1,0 +1,31 @@
+{
+  "name": "cms",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "ts:generate-types": "strapi ts:generate-types"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "^5.0.0",
+    "@strapi/plugin-users-permissions": "^5.0.0",
+    "@strapi/strapi": "^5.0.0",
+    "pg": "^8.13.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.22.3",
+    "styled-components": "^6.4.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@strapi/typescript-utils": "^5.0.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=6.0.0"
+  }
+}

@@ -1,0 +1,22 @@
+export default {
+  "collectionName": "components_product_color_swatches",
+  "info": {
+    "displayName": "Color Swatch",
+    "icon": "paint"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+};

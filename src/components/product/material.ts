@@ -1,0 +1,25 @@
+export default {
+  "collectionName": "components_product_materials",
+  "info": {
+    "displayName": "Material",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+};

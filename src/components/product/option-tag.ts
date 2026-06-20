@@ -1,0 +1,14 @@
+export default {
+  "collectionName": "components_product_option_tags",
+  "info": {
+    "displayName": "Option Tag",
+    "icon": "tag"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    }
+  }
+};

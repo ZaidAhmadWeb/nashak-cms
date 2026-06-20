@@ -1,0 +1,18 @@
+export default {
+  "collectionName": "components_shared_cta_buttons",
+  "info": {
+    "displayName": "CTA Button",
+    "icon": "cursor"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+};

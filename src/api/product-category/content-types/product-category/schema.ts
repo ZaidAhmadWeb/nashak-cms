@@ -1,0 +1,87 @@
+export default {
+  "kind": "collectionType",
+  "collectionName": "product_categories",
+  "info": {
+    "singularName": "product-category",
+    "pluralName": "product-categories",
+    "displayName": "Product Category",
+    "description": "A product category page (Boxing, MMA, BJJ, etc.)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "group": {
+      "type": "enumeration",
+      "enum": [
+        "ring-and-cage",
+        "martial-arts",
+        "apparel-and-gear"
+      ],
+      "required": true
+    },
+    "cardImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "introHeading": {
+      "type": "string"
+    },
+    "introDescription": {
+      "type": "richtext"
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.stat"
+    },
+    "subtypes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.subtype-card"
+    },
+    "materials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.material"
+    },
+    "readyToGoColors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.color-swatch"
+    },
+    "specialColorsNote": {
+      "type": "text"
+    },
+    "weightOrSizeOptions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.option-tag"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+};

@@ -1,0 +1,18 @@
+export default {
+  "collectionName": "components_company_timeline_entries",
+  "info": {
+    "displayName": "Timeline Entry",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+};

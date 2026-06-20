@@ -1,0 +1,18 @@
+export default {
+  "collectionName": "components_careers_job_categories",
+  "info": {
+    "displayName": "Job Category",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+};

@@ -1,0 +1,43 @@
+export default {
+  "kind": "singleType",
+  "collectionName": "difference_pages",
+  "info": {
+    "singularName": "difference-page",
+    "pluralName": "difference-pages",
+    "displayName": "Our Difference Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "heroHeading": {
+      "type": "string"
+    },
+    "introText": {
+      "type": "text"
+    },
+    "servicePrinciples": {
+      "type": "component",
+      "repeatable": true,
+      "component": "difference.service-principle"
+    },
+    "cycleSteps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "difference.cycle-step"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+};

@@ -1,0 +1,25 @@
+export default {
+  "collectionName": "components_shared_logo_items",
+  "info": {
+    "displayName": "Logo Item",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+};

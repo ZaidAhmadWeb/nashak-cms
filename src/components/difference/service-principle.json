@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_difference_service_principles",
+  "info": { "displayName": "Service Principle", "icon": "star" },
+  "options": {},
+  "attributes": {
+    "icon": { "type": "media", "multiple": false, "allowedTypes": ["images", "files"] },
+    "title": { "type": "string", "required": true },
+    "description": { "type": "text", "required": true }
+  }
+}

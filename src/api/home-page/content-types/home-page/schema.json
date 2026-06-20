@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page"
+  },
+  "options": { "draftAndPublish": true },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSlides": { "type": "component", "repeatable": true, "component": "home.hero-slide" },
+    "processSteps": { "type": "component", "repeatable": true, "component": "home.process-step" },
+    "featuredCategories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product-category.product-category"
+    },
+    "stats": { "type": "component", "repeatable": true, "component": "shared.stat" },
+    "quoteText": { "type": "text" },
+    "quoteAuthorName": { "type": "string" },
+    "quoteAuthorSignature": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "legacyHeading": { "type": "string" },
+    "legacyDescription": { "type": "text" },
+    "legacyVideoUrl": { "type": "string" },
+    "capabilities": { "type": "component", "repeatable": true, "component": "shared.icon-text-card" },
+    "certificationLogos": { "type": "component", "repeatable": true, "component": "shared.logo-item" },
+    "sustainabilityTeaserHeading": { "type": "string" },
+    "sustainabilityTeaserDescription": { "type": "text" },
+    "sustainabilityTeaserLink": { "type": "string" },
+    "differenceTeaserHeading": { "type": "string" },
+    "differenceTeaserDescription": { "type": "text" },
+    "differenceTeaserLink": { "type": "string" },
+    "clientLogos": { "type": "component", "repeatable": true, "component": "shared.logo-item" },
+    "seo": { "type": "component", "repeatable": false, "component": "shared.seo" }
+  }
+}
