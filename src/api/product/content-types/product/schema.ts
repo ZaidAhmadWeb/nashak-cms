@@ -21,10 +21,10 @@ export default {
       "targetField": "name",
       "required": true
     },
-    "subCategory": {
+    "category": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::sub-category.sub-category"
+      "target": "api::product-category.product-category"
     },
     "cardImage": {
       "type": "media",
@@ -45,6 +45,9 @@ export default {
     },
     "description": {
       "type": "richtext"
+    },
+    "modelsAvailable": {
+      "type": "integer"
     },
     "materials": {
       "type": "component",

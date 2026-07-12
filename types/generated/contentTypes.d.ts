@@ -731,6 +731,10 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
       'manyToMany',
       'api::product-category.product-category'
     >;
+    featuredProducts: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::product.product'
+    >;
     heroSlides: Schema.Attribute.Component<'home.hero-slide', true>;
     legacyDescription: Schema.Attribute.Text;
     legacyHeading: Schema.Attribute.String;
@@ -878,6 +882,10 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
   };
   attributes: {
     cardImage: Schema.Attribute.Media<'images'>;
+    category: Schema.Attribute.Relation<
+      'manyToOne',
+      'api::product-category.product-category'
+    >;
     colors: Schema.Attribute.Component<'product.color-swatch', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -891,16 +899,13 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     materials: Schema.Attribute.Component<'product.material', true>;
+    modelsAvailable: Schema.Attribute.Integer;
     name: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'shared.seo', false>;
     shortDescription: Schema.Attribute.Text;
     sizeOptions: Schema.Attribute.Component<'product.option-tag', true>;
     slug: Schema.Attribute.UID<'name'> & Schema.Attribute.Required;
-    subCategory: Schema.Attribute.Relation<
-      'manyToOne',
-      'api::sub-category.sub-category'
-    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

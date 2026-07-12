@@ -26,6 +26,11 @@ export default {
       "relation": "manyToMany",
       "target": "api::product-category.product-category"
     },
+    "featuredProducts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product"
+    },
     "stats": {
       "type": "component",
       "repeatable": true,
