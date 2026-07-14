@@ -1,5 +1,5 @@
 import type { Core } from '@strapi/strapi';
-// testing image persistence
+// testing image persistence +2
 export default {
   register(/* { strapi }: { strapi: Core.Strapi } */) {},
 
